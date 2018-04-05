@@ -66,9 +66,9 @@ function renderMessage(msg) {
 		e.preventDefault();
 
 		var btn = this;
-		var letter = btn.innerHTML; // Get element content
+		var letter = btn.innerHTML; 
 		var notFound = -1;
-		var correct = word.indexOf(letter) != notFound; // Check if word contains letter
+		var correct = word.indexOf(letter) != notFound; 
 		btn.disabled = true;
 
 		if (correct) {
