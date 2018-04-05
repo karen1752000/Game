@@ -10,15 +10,59 @@ body {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
 }
 
 h1 {
 	margin-bottom: 100px;
+	font-size: 60px;
 }
 
+.hangman-wrapper {
+	max-width: 800px;
+	text-align: center;
+}
+
+#hangman-keyboard {
+	width: 100%;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.hangman-play {
+	border: 1px solid #000;
+	background-color: transparent;
+	padding: 15px 20px;
+	margin: 20px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+
+.hangman-play:focus, .hangman-play:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.letter {
+	font-size: 25px;
+	margin: 0.25em;
+}
+
+.abtn {
+	font-size: 20px;
+	font-weight: 500;
+	color: #fff;
+	background-color: #ef9a9a;
+	border: 0;
+	border-radius: 3px;
+	padding: 18px;
+	width: 56px;
+	margin: 3px;
+	flex: 1 1 auto;
+}
+
+.abtn:disabled {
+	background-color: #212121;
+}
