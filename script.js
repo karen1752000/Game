@@ -19,3 +19,11 @@ function hangman() {
 		];
 		return getRandomNode(words);
 	}
+
+	var lives;
+	var word;
+	var secretWord;
+	var alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+	var keyboard = document.getElementById("hangman-keyboard");
+	var playBtn = document.getElementById("hangman-play");
+	var messageContainer = document.getElementById("hangman-message");
